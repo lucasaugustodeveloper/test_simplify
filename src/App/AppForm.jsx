@@ -1,3 +1,5 @@
+import './style.scss'
+
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
@@ -7,18 +9,23 @@ import {
   search
 } from './action'
 
-const AppForm = ({ text, changeText, search }) => (
-  <div>
+const AppForm = ({ text, changeText }) => (
+  <header className="AppForm-header col-lg-6 col-lg-offset-3">
     <input
       type="text"
       id="text"
-      value={text}
+      className="AppForm-search"
+      value={ text }
       onChange={ changeText }
       placeholder="enter your search"
     />
-    {console.log(text)}
-    <button>search</button>
-  </div>
+    <button
+      className="AppForm-btn"
+      onClick={ search }
+    >
+      search
+    </button>
+  </header>
 )
 
 const mapStateToProps = state => ({ text: state.photo.text })

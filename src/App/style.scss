@@ -1,0 +1,37 @@
+.AppForm {
+  &-header {
+    background: orange;
+    padding: {
+      top: 1rem;
+      bottom: 1rem;
+    }
+  }
+
+  &-search {
+    margin: {
+      right: 1rem;
+    }
+    padding: {
+      top: .4rem;
+      bottom: .4rem;
+      left: 1rem;
+    }
+    border: {
+      width: 0;
+      radius: 1rem;
+    }
+
+    width: 80%;
+
+    background: #fff;
+    color: #333;
+  }
+  &-btn {
+    padding: .4rem 1rem;
+
+    border: {
+      width: 0;
+      radius: 1rem;
+    }
+  }
+}

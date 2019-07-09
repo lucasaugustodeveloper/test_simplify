@@ -5,7 +5,7 @@ import React, { Component } from 'react'
 import AppForm from './AppForm'
 
 const App = props => (
-  <div>
+  <div className="container-fluid">
     <AppForm />
   </div>
 )

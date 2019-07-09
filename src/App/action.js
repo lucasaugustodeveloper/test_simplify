@@ -5,7 +5,8 @@ export const changeText = event => ({
   payload: event.target.value
 })
 
-export const search = event => {
+export const search = () => {
+  console.log('call me')
   return (dispatch, getState) => {
     const text = getState().photo.text
     const search = text ? `?query=${text}` : ''
