@@ -1,4 +1,4 @@
-import axios from '../services/api/flickr'
+import { search as axios } from '../services/api/flickr'
 
 export const changeText = event => ({
   type: 'TEXT_CHANGED',

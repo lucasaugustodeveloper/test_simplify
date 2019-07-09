@@ -1,10 +1,8 @@
-const todo = (state = [], action) => {
-  switch (action.type) {
-    case 'ADD_TODO':
-      return state.concat([action.text])
-    default:
-      return state
-  }
-}
+import { combineReducers } from 'redux'
+import AppReducer from '../App/reducer'
 
-export default todo
+const rootReducer = combineReducers({
+  photo: AppReducer,
+})
+
+export default rootReducer

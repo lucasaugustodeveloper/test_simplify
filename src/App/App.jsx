@@ -2,11 +2,11 @@ import '../assets/sass/index.scss'
 
 import React, { Component } from 'react'
 
-import { search } from '../services/api/flickr'
+import AppForm from './AppForm'
 
 const App = props => (
   <div>
-    Hello World React
+    <AppForm />
   </div>
 )
 
