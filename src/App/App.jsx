@@ -1,10 +1,12 @@
 import '../assets/sass/index.scss'
 
-import React from 'react'
+import React, { Component } from 'react'
+
+import { search } from '../services/api/flickr'
 
 const App = props => (
   <div>
-    Hello World React!!!
+    Hello World React
   </div>
 )
 
