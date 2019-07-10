@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux'
-import AppReducer from '../App/reducer'
+import AppReducer from '../Header/reducer'
 
 const rootReducer = combineReducers({
-  photo: AppReducer,
+  photos: AppReducer,
 })
 
 export default rootReducer
