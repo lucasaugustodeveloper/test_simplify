@@ -4,12 +4,6 @@
   }
 
   &List {
-    max-width: 24.7%;
-    &:not(:first-child) {
-      margin: {
-        left: .3rem;
-      }
-    }
     padding: {
       top: .3rem;
       bottom: .3rem;
