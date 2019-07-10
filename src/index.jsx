@@ -7,7 +7,7 @@ import promise from 'redux-promise'
 import multi from 'redux-multi'
 import thunk from 'redux-thunk'
 
-import App from './App/App'
+import App from './App'
 
 import reducers from './main/reducer'
 
