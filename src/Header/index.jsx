@@ -2,11 +2,11 @@ import '../assets/sass/index.scss'
 
 import React, { Component } from 'react'
 
-import AppForm from './AppForm'
+import HeaderForm from './HeaderForm'
 
 const App = props => (
-  <div className="container-fluid">
-    <AppForm />
+  <div className="row">
+    <HeaderForm />
   </div>
 )
 

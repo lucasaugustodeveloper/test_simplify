@@ -6,9 +6,8 @@ export const changeText = event => ({
 })
 
 export const search = () => {
-  console.log('call me')
   return (dispatch, getState) => {
-    const text = getState().photo.text
+    const text = getState().photos.text
     const search = text ? `?query=${text}` : ''
     const request = axios.get(search)
       .then(res => dispatch({ type: 'TEXT_SEARCHED', payload: res.data }))

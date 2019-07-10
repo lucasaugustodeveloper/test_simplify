@@ -10,7 +10,7 @@ import {
 } from './action'
 
 const AppForm = ({ text, changeText }) => (
-  <header className="AppForm-header col-lg-6 col-lg-offset-3">
+  <header className="AppForm-header col-lg-12 center-xs">
     <input
       type="text"
       id="text"
@@ -28,7 +28,7 @@ const AppForm = ({ text, changeText }) => (
   </header>
 )
 
-const mapStateToProps = state => ({ text: state.photo.text })
+const mapStateToProps = state => ({ text: state.photos.text, state })
 const mapDispatchToProps = dispatch =>
   bindActionCreators({ changeText, search }, dispatch)
 
