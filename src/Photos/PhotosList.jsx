@@ -3,6 +3,8 @@ import './styles.scss'
 import React, { Fragment } from 'react'
 import { connect } from 'react-redux'
 
+import PhotoTags from './PhotoTags'
+
 const PhotosList = ({ list }) => {
   return (
     <div className="row">
@@ -21,6 +23,7 @@ const PhotosList = ({ list }) => {
               {item.user.name}
             </span>
           </div>
+          <PhotoTags tags={item.tags} />
         </div>
       ))}
     </div>

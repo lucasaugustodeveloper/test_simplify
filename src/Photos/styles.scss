@@ -31,4 +31,31 @@
       }
     }
   }
+  &Tags {
+    margin: {
+      top: 1rem;
+    }
+
+    padding: 0 1rem;
+
+    &-item {
+      &:not(:first-child) {
+        margin: {
+          left: .5rem;
+        }
+      }
+      margin: {
+        top: .5rem;
+      }
+      padding: .3rem;
+
+      border: {
+        radius: .5rem;
+      }
+      cursor: pointer;
+
+      background: #eaeaea;
+      color: #333;
+    }
+  }
 }
