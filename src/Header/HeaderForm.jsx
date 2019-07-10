@@ -33,7 +33,7 @@ class AppForm extends Component {
         />
         <button
           className="AppForm-btn"
-          onClick={search}
+          onClick={() => search(text)}
         >
           search
     </button>
@@ -41,25 +41,6 @@ class AppForm extends Component {
     )
   }
 }
-
-// const AppForm = ({ text, changeText, search }) => (
-  // <header className="AppForm-header col-lg-12 center-xs">
-  //   <input
-  //     type="text"
-  //     id="text"
-  //     className="AppForm-search"
-  //     value={ text }
-  //     onChange={ changeText }
-  //     placeholder="enter your search"
-  //   />
-  //   <button
-  //     className="AppForm-btn"
-  //     onClick={ search }
-  //   >
-  //     search
-  //   </button>
-  // </header>
-// )
 
 const mapStateToProps = state => ({ text: state.photos.text })
 const mapDispatchToProps = dispatch =>
