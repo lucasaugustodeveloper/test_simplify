@@ -11,7 +11,7 @@ import App from './App'
 
 import reducers from './main/reducer'
 
-const store = applyMiddleware(promise)(createStore)(reducers)
+const store = applyMiddleware(thunk, multi, promise)(createStore)(reducers)
 
 ReactDOM.render(
   <Provider store={ store }>
